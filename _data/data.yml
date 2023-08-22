@@ -96,9 +96,9 @@ experiences:
           - Integrated Windows/Mac/Linux/GSuite authentication using LDAP to provide cross platform SSO for VPNs, databases, critical websites, etc., reducing end user credential management and increasing security.
           - Automated HR process across Greenhouse, Jira, AD, and GSuite, reducing steps involved for onboarding by 90% (from 40 steps to 4).
 
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
+      - role: Lead IT Infrastructure Engineer
+        time: Oct 2016 - Aug 2018
+        company: Blink Health, New York, New York
         details: 
           - Designed, built, and managed UniFi 802.1X LAN and WiFi infrastructure at three sites with connectivity to AWS data centers via site-to-site VPN, providing seamless SSO-backed network auth to 200+ staff.
           - Achieved scaleable, reusable, and reviewable infrastructure as code with Github pull request support, CircleCI integration, and revision history across multiple AWS accounts via Terraform.
@@ -109,41 +109,24 @@ experiences:
           - Implemented MDM fleet management software to achieve compliance and security policy goals.
           - Successfully oversaw opening of four offices in three states; conducted five successful office moves.
 
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
+      - role: Assistant Vice President, Technology - Level III System and Network Engineer
+        time: Feb 2013 - May 2016
+        company: Build America Mutual Assurance Company, New York, NY
         details: 
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          - Designed and implemented Active Directory server backbone to provide SSO for Windows, Mac, and Linux client and server endpoints using AD, Kerberos, and LDAP technologies in conjunction with MFA.
+          - Implemented Jabber/XMPP with SSO and VOIP integration for pre-existing phone system.
+          - Moved servers and applications to cloud providers, resulting in over $250K in savings over five years.
+          - Conducted non-developer technology audit process and compliance reviews (Sarbanes-Oxley, etc).
+          - Provided application/hardware service, support, and training to nearly 100 users across three locations.
+          - Supervised allocation, planning, and monitoring of hardware and software resources.
+
 
       - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
+        time: Jan 2012 - Jan 2013
+        company: SecondMarket, Inc, New York, NY
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          - Configured and maintained a single sign-on solution utilizing SAML/XML and Active Directory Federation Services to provide seamless integration and usage of AD passwords for third-party web apps such as Yammer, Salesforce, and Zendesk—saving the company $36 per user per year.
+          - Managed all technology purchasing for a rapidly growing technology/finance services startup with an annual technology budget of over $1.5 million for three locations—two domestic, one international (New York City, San Francisco, and Hong Kong).
 
 #certifications:
 #      title: Certifications

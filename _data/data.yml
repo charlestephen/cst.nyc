@@ -14,6 +14,7 @@ sidebar:
 
     # Sidebar links
     email: hello@cst.wtf
+    phone: +1.646.902.1485
     timezone: America/New York
     citizenship: USA
     website: cst.wtf #do not add http://
@@ -46,9 +47,9 @@ sidebar:
         - item: Technology
           link:
 
-career-profile:
-    title: Career Profile
-    summary: |
+#career-profile:
+#    title: Career Profile
+#    summary: Mid-career exceptional technologist with 
       
 education:
     title: Education
@@ -63,31 +64,55 @@ experiences:
     info:
       - role: Founder, CEO, & Principal Consultant
         time: Jan 2018 - Present
-        company: Brooklyn Helpdesk, Inc. - Brooklyn, NY
-        details: |
-          Consumer and SMB IT/DevOps, automation and integration engineering.
-          Manage network equipment and server stacks in the tristate area totaling just under 500 client devices with revenue nearing $7,500/month.
+        company: Brooklyn Helpdesk, Inc., Brooklyn, NY
+        details: 
+          - Consumer and SMB IT/DevOps, automation and integration engineering.
+          - Manage network equipment and server stacks in the tristate area totaling just under 500 client devices with revenue nearing $7,500/month.
             Services include:
-            Identity & Access Management/SSO Setup and Integration
-            CI/CD Pipeline Setup and Automation
-            LAN/WiFi Installation and Maintenance
-            Automation and Integration Engineering
-            Smart Home/Office Automation, Setup, and Configuration including lighting, window coverings, A/V, scene creation, and server management.
-          General technical and IT support
+            - Identity & Access Management/SSO Setup and Integration
+            - CI/CD Pipeline Setup and Automation
+            - LAN/WiFi Installation and Maintenance
+            - Automation and Integration Engineering
+            - Smart Home/Office Automation, Setup, and Configuration including lighting, window coverings, A/V, scene creation, and server management.
+          - General technical and IT support
 
       - role: DevOps Software Engineer
         time: Nov 2019 - Dec 2021
         company: Symbiont.io, New York, NY
-        details: |
-          Worked with cross-company stakeholders to reduce onboarding time by 25% with cost reduction of 12% via a streamlined process integrating SAAS, automations, configurations of IAM/MDM tools (Active Directory, GSuite, Okta, JAMF) to achieve SSO from hardware to cloud.
-          Designed, built, tested, deployed, and monitored various automation/process streamlining software integrations to accomplish critical tasks with respect to corporate IAM, user management, and hardware de/provisioning.
-          Analyzed currently available technologies to ensure best practice methodologies, on-time delivery, and practical solutions that actually work for complex corporate hardware/software integration requirements.
-          Deployed, monitored, and maintained Kubernetes and Docker stacks for a team of three dozen software engineers while also running IT functionalities for a burgeoning fintech startup.
+        details: 
+          - Worked with cross-company stakeholders to reduce onboarding time by 25% with cost reduction of 12% via a streamlined process integrating SAAS, automations, configurations of IAM/MDM tools (Active Directory, GSuite, Okta, JAMF) to achieve SSO from hardware to cloud.
+          - Designed, built, tested, deployed, and monitored various automation/process streamlining software integrations to accomplish critical tasks with respect to corporate IAM, user management, and hardware de/provisioning.
+          - Analyzed currently available technologies to ensure best practice methodologies, on-time delivery, and practical solutions that actually work for complex corporate hardware/software integration requirements.
+          - Deployed, monitored, and maintained Kubernetes and Docker stacks for a team of three dozen software engineers while also running IT functionalities for a burgeoning fintech startup.
+
+      - role: Software Infrastructure Engineer and Interim Director of IT
+        time: Aug 2018 - Feb 2019
+        company: Blink Health, New York, New York
+        details: 
+          - Provisioned and maintained all Windows server instances, focusing on the authentication/SSO subsystem (Active Directory) to provide fault tolerance and high availability using Chef, Ansible, and Terraform.
+          - Served as subject matter expert on SSO design and implementation while working closely with Engineering Security team to achieve increased adoption of core SSO technologies across platforms and business units.
+          - Automated Active Directory credential writing to GSuite, simplifying user provisioning and de-provisioning while creating a true SSO experience for end users on mobile, Macs, PCs, and the Internet.
+          - Leveraged Google SAML to reduce endpoint maintenance and external attack surface when connecting SSO to SAAS applications, achieving higher security, lower cost of delivery, and increased efficiency.
+          - Integrated Windows/Mac/Linux/GSuite authentication using LDAP to provide cross platform SSO for VPNs, databases, critical websites, etc., reducing end user credential management and increasing security.
+          - Automated HR process across Greenhouse, Jira, AD, and GSuite, reducing steps involved for onboarding by 90% (from 40 steps to 4).
 
       - role: UI Developer
         time: 2012 - 2014
         company: Amazon, London
-        details: |
+        details: 
+          - Designed, built, and managed UniFi 802.1X LAN and WiFi infrastructure at three sites with connectivity to AWS data centers via site-to-site VPN, providing seamless SSO-backed network auth to 200+ staff.
+          - Achieved scaleable, reusable, and reviewable infrastructure as code with Github pull request support, CircleCI integration, and revision history across multiple AWS accounts via Terraform.
+          - Reconfigured engineering Jira workflows to take advantage of Github pull request and CircleCI automations, decreasing launch time and manual integration testing for the DevOps team.
+          - Grew IT team to become integral part of organization with 10 members operating across three geographic locations.
+          - Supervised growing IT staff while working closely with management to develop SOPs for new units.
+          - Managed annual technology budget of $5mm+ with inventory comprising hundreds of endpoints.
+          - Implemented MDM fleet management software to achieve compliance and security policy goals.
+          - Successfully oversaw opening of four offices in three states; conducted five successful office moves.
+
+      - role: UI Developer
+        time: 2012 - 2014
+        company: Amazon, London
+        details: 
           Describe your role here lorem ipsum dolor sit amet, consectetuer
           adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
           Cum sociis natoque penatibus et magnis dis parturient montes,
@@ -96,18 +121,6 @@ experiences:
             - Bullet point
             - Bullet point
 
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-            
       - role: UI Developer
         time: 2012 - 2014
         company: Amazon, London

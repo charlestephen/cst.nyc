@@ -61,21 +61,20 @@ education:
 experiences:
     title: Experiences
     info:
-      - role: Lead Developer
-        time: 2015 - Present
-        company: Startup Hubs, San Francisco
+      - role: Founder, CEO, & Principal Consultant
+        time: Jan 2018 - Present
+        company: Brooklyn Helpdesk, Inc. - Brooklyn, NY
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
+          Consumer and SMB IT/DevOps, automation and integration engineering.
+          Manage network equipment and server stacks in the tristate area totaling just under 500 client devices with revenue nearing $7,500/month.
+            Services include:
+            Identity & Access Management/SSO Setup and Integration
+            CI/CD Pipeline Setup and Automation
+            LAN/WiFi Installation and Maintenance
+            Automation and Integration Engineering
+            Smart Home/Office Automation, Setup, and Configuration including lighting, window coverings, A/V, scene creation, and server management.
+          General technical and IT support
+
       - role: Senior Software Engineer
         time: 2014 - 2015
         company: Google, London

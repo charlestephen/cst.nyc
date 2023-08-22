@@ -75,17 +75,15 @@ experiences:
             Smart Home/Office Automation, Setup, and Configuration including lighting, window coverings, A/V, scene creation, and server management.
           General technical and IT support
 
-      - role: Senior Software Engineer
-        time: 2014 - 2015
-        company: Google, London
+      - role: DevOps Software Engineer
+        time: Nov 2019 - Dec 2021
+        company: Symbiont.io, New York, NY
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          Worked with cross-company stakeholders to reduce onboarding time by 25% with cost reduction of 12% via a streamlined process integrating SAAS, automations, configurations of IAM/MDM tools (Active Directory, GSuite, Okta, JAMF) to achieve SSO from hardware to cloud.
+          Designed, built, tested, deployed, and monitored various automation/process streamlining software integrations to accomplish critical tasks with respect to corporate IAM, user management, and hardware de/provisioning.
+          Analyzed currently available technologies to ensure best practice methodologies, on-time delivery, and practical solutions that actually work for complex corporate hardware/software integration requirements.
+          Deployed, monitored, and maintained Kubernetes and Docker stacks for a team of three dozen software engineers while also running IT functionalities for a burgeoning fintech startup.
+
       - role: UI Developer
         time: 2012 - 2014
         company: Amazon, London

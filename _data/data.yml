@@ -47,9 +47,9 @@ sidebar:
         - item: Technology
           link:
 
-#career-profile:
-#    title: Career Profile
-#    summary: Mid-career exceptional technologist with 
+career-profile:
+    title: Career Profile
+    summary: Mid-career exceptional technologist with 
       
 education:
     title: Education
@@ -57,7 +57,6 @@ education:
       - degree: BA in Modern American Legal History
         university: The University of Chicago
         time: 2005 - 2010
-        details: |
          
 experiences:
     title: Experiences

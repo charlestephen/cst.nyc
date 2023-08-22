@@ -68,12 +68,11 @@ experiences:
         details: 
           - Consumer and SMB IT/DevOps, automation and integration engineering.
           - Manage network equipment and server stacks in the tristate area totaling just under 500 client devices with revenue nearing $7,500/month.
-            Services include:
-            - Identity & Access Management/SSO Setup and Integration
-            - CI/CD Pipeline Setup and Automation
-            - LAN/WiFi Installation and Maintenance
-            - Automation and Integration Engineering
-            - Smart Home/Office Automation, Setup, and Configuration including lighting, window coverings, A/V, scene creation, and server management.
+          - Identity & Access Management/SSO Setup and Integration
+          - CI/CD Pipeline Setup and Automation
+          - LAN/WiFi Installation and Maintenance
+          - Automation and Integration Engineering
+          - Smart Home/Office Automation, Setup, and Configuration including lighting, window coverings, A/V, scene creation, and server management.
           - General technical and IT support
 
       - role: DevOps Software Engineer

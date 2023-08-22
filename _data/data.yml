@@ -65,7 +65,7 @@ experiences:
       - role: Founder, CEO, & Principal Consultant
         time: Jan 2018 - Present
         company: Brooklyn Helpdesk, Inc., Brooklyn, NY
-        details: 
+        details: | 
           - Consumer and SMB IT/DevOps, automation and integration engineering.
           - Manage network equipment and server stacks in the tristate area totaling just under 500 client devices with revenue nearing $7,500/month.
           - Identity & Access Management/SSO Setup and Integration
@@ -78,7 +78,7 @@ experiences:
       - role: DevOps Software Engineer
         time: Nov 2019 - Dec 2021
         company: Symbiont.io, New York, NY
-        details: 
+        details: | 
           - Worked with cross-company stakeholders to reduce onboarding time by 25% with cost reduction of 12% via a streamlined process integrating SAAS, automations, configurations of IAM/MDM tools (Active Directory, GSuite, Okta, JAMF) to achieve SSO from hardware to cloud.
           - Designed, built, tested, deployed, and monitored various automation/process streamlining software integrations to accomplish critical tasks with respect to corporate IAM, user management, and hardware de/provisioning.
           - Analyzed currently available technologies to ensure best practice methodologies, on-time delivery, and practical solutions that actually work for complex corporate hardware/software integration requirements.
@@ -87,7 +87,7 @@ experiences:
       - role: Software Infrastructure Engineer and Interim Director of IT
         time: Aug 2018 - Feb 2019
         company: Blink Health, New York, New York
-        details: 
+        details: | 
           - Provisioned and maintained all Windows server instances, focusing on the authentication/SSO subsystem (Active Directory) to provide fault tolerance and high availability using Chef, Ansible, and Terraform.
           - Served as subject matter expert on SSO design and implementation while working closely with Engineering Security team to achieve increased adoption of core SSO technologies across platforms and business units.
           - Automated Active Directory credential writing to GSuite, simplifying user provisioning and de-provisioning while creating a true SSO experience for end users on mobile, Macs, PCs, and the Internet.
@@ -98,7 +98,7 @@ experiences:
       - role: Lead IT Infrastructure Engineer
         time: Oct 2016 - Aug 2018
         company: Blink Health, New York, New York
-        details: 
+        details: | 
           - Designed, built, and managed UniFi 802.1X LAN and WiFi infrastructure at three sites with connectivity to AWS data centers via site-to-site VPN, providing seamless SSO-backed network auth to 200+ staff.
           - Achieved scaleable, reusable, and reviewable infrastructure as code with Github pull request support, CircleCI integration, and revision history across multiple AWS accounts via Terraform.
           - Reconfigured engineering Jira workflows to take advantage of Github pull request and CircleCI automations, decreasing launch time and manual integration testing for the DevOps team.
@@ -111,7 +111,7 @@ experiences:
       - role: Assistant Vice President, Technology - Level III System and Network Engineer
         time: Feb 2013 - May 2016
         company: Build America Mutual Assurance Company, New York, NY
-        details: 
+        details: |
           - Designed and implemented Active Directory server backbone to provide SSO for Windows, Mac, and Linux client and server endpoints using AD, Kerberos, and LDAP technologies in conjunction with MFA.
           - Implemented Jabber/XMPP with SSO and VOIP integration for pre-existing phone system.
           - Moved servers and applications to cloud providers, resulting in over $250K in savings over five years.
@@ -120,7 +120,7 @@ experiences:
           - Supervised allocation, planning, and monitoring of hardware and software resources.
 
 
-      - role: UI Developer
+      - role: Support Technician II
         time: Jan 2012 - Jan 2013
         company: SecondMarket, Inc, New York, NY
         details: |

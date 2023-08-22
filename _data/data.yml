@@ -14,7 +14,7 @@ sidebar:
 
     # Sidebar links
     email: hello@cst.wtf
-    phone: +1.646.902.1485
+    phone: '+1.646.902.1485'
     timezone: America/New York
     citizenship: USA
     website: cst.wtf #do not add http://
@@ -49,7 +49,7 @@ sidebar:
 
 career-profile:
     title: Career Profile
-    summary: Mid-career exceptional technologist with 
+    summary: Mid-career exceptional technologist with skills
       
 education:
     title: Education
@@ -117,7 +117,6 @@ experiences:
           - Conducted non-developer technology audit process and compliance reviews (Sarbanes-Oxley, etc).
           - Provided application/hardware service, support, and training to nearly 100 users across three locations.
           - Supervised allocation, planning, and monitoring of hardware and software resources.
-
 
       - role: Support Technician II
         time: Jan 2012 - Jan 2013

@@ -1,8 +1,2 @@
 include:
-  [
-    ".well-known",
-    ".well-known/opengpgkey",
-    ".well-known/opengpgkey/hu",
-    ".well-known/opengpgkey/hu/.well-known/opengpgkey/hu/o11tpby5w77fst1e5aspbz6mgdirps7w?l=c",
-  ]
-keep_files: [".well-known/opengpgkey/hu/.well-known/opengpgkey/hu/o11tpby5w77fst1e5aspbz6mgdirps7w?l=c"]
+  - .well-known

@@ -38,6 +38,10 @@ jobs:
         with:
           # Upload entire repository
           path: "."
+      - name: Github Pages Directory Listing
+        uses: jayanta525/github-pages-directory-listing@v3.0.0
+        with:
+          FOLDER: "./.well-known/opengpgkey/hu"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

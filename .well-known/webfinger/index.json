@@ -1,0 +1,20 @@
+{
+  "subject": "acct:c@cst.wtf",
+  "properties": {
+    "http://schema.org/name": "Charles Stephen Thompson"
+  },
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://cst.wtf"
+    },
+    {
+      "rel": "http://webfinger.net/rel/businesscard",
+      "href": "https://cst.wtf/assets/cst.vcf"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "href": "https://cst.wtf/assets/avatar.png"
+    }
+  ]
+}

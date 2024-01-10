@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 14.2.1//EN
+N:Thompson;Charles;Stephen;;
+FN:Charles Stephen Thompson
+EMAIL;type=INTERNET;type=pref:c@cst.wtf
+EMAIL;type=INTERNET:c@bkhd.nyc
+EMAIL;type=INTERNET:c@bkhd.pro
+TEL;type=CELL;type=VOICE;type=pref:332.262.8079
+ADR;type=HOME;type=pref:;;;Brooklyn\,;NY;11238;United States
+END:VCARD

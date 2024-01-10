@@ -9,10 +9,6 @@
       "href": "https://cst.wtf"
     },
     {
-      "rel": "http://webfinger.net/rel/businesscard",
-      "href": "https://cst.wtf/assets/cst.vcf"
-    },
-    {
       "rel": "http://webfinger.net/rel/avatar",
       "href": "https://cst.wtf/assets/avatar.png"
     }

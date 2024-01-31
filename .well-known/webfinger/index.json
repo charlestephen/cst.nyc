@@ -11,6 +11,32 @@
     {
       "rel": "http://webfinger.net/rel/avatar",
       "href": "https://cst.wtf/assets/avatar.png"
+    },
+    {
+      "rel": "https://openid.net/specs/connect/1.0/issuer",
+      "href": "https://auth.cst.wtf/"
     }
   ]
 }
+
+
+docker run -d --name keycloak -e KEYCLOAK_ADMIN=keycloakadmin -e KEYCLOAK_ADMIN_PASSWORD="Jubilant-Scoop-Cruelness7-Cork-Demote-Outthink-Rented-Deepen" -e KC_HEALTH_ENABLED=true -e KC_METRICS_ENABLED=true -e KC_DB=mariadb -e WORKDIR=/opt/keycloak -e KC_DB_URL=jdbc:mariadb://core-mariadb:3306/keycloak -e KC_DB_USERNAME=keycloak -e KC_DB_PASSWORD="Obligate-Grimacing-Popular1-Sampling-Turbojet-Canteen-Nibble-Revolt" -e KC_HOSTNAME=auth.cst.wtf -e KC_BASE_URL=cst.wtf -p 8443:8443 -p 8780:8080 quay.io/keycloak/keycloak:23.0.4 start-dev
+
+docker run -d --name authentik --restart unless-stopped --user=root -p 9999:9000 -p 9433:9443 -p 3389:3389 -p 6636:6636 -p 9300:9300 -p 9900:9900 -e AUTHENTIK_ERROR_REPORTING__ENABLED=false -e AUTHENTIK_SECRET_KEY=Obligate-Grimacing-Popular1-Sampling-Turbojet-Canteen -e AUTHENTIK_POSTGRESQL__HOST=db21ed7f_postgres -e AUTHENTIK_POSTGRESQL__PORT=5432 -e AUTHENTIK_POSTGRESQL__NAME=authentik -e AUTHENTIK_POSTGRESQL__USER=authentik -e AUTHENTIK_POSTGRESQL__PASSWORD=Jubilant-Scoop-Cruelness7-Cork -e AUTHENTIK_POSTGRESQL__SSLMODE=off -e AUTHENTIK_REDIS__HOST=redis -e AUTHENTIK_REDIS__PORT=32795  -v /var/run/docker.sock:/var/run/docker.sock -v /etc/authentik/media:/media -v /usr/share/hassio/ssl:/certs -v /etc/authentik/custom-templates:/templates -e AUTHENTIK_LISTEN__HTTP=9000 -e AUTHENTIK_LISTEN__HTTPS=9443 -e AUTHENTIK_LISTEN__LDAP=3389 -e AUTHENTIK_LISTEN__LDAPS=6636 -e AUTHENTIK_LISTEN__METRICS=9300 -e AUTHENTIK_LISTEN__DEBUG=9900 -e AUTHENTIK_LISTEN__TRUSTED_PROXY_CIDRS="192.168.2.0/24, 172.16.0.0/12" beryju/authentik
+
+AUTHENTIK_REDIS__DB
+AUTHENTIK_REDIS__USERNAME
+AUTHENTIK_REDIS__PASSWORD
+AUTHENTIK_RESULT_BACKEND__URL
+AUTHENTIK_CACHE__URL
+
+
+AUTHENTIK_EMAIL__HOST=localhost
+AUTHENTIK_EMAIL__PORT=25
+AUTHENTIK_EMAIL__USERNAME=
+AUTHENTIK_EMAIL__PASSWORD=
+AUTHENTIK_EMAIL__USE_TLS=
+AUTHENTIK_EMAIL__USE_SSL=false
+AUTHENTIK_EMAIL__TIMEOUT=10
+AUTHENTIK_EMAIL__FROM=auth@cst.wtf
+'Jubilant-Scoop-Cruelness7-Cork-Demote-Outthink-Rented-Deepen'

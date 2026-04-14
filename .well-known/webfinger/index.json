@@ -1,12 +1,12 @@
 {
-  "subject": "acct:c@cst.nyc",
+  "subject": "acct:c@cst.wtf",
   "properties": {
     "http://schema.org/name": "Charles Stephen Thompson"
   },
   "links": [
     {
       "rel": "http://webfinger.net/rel/profile-page",
-      "href": "https://cst.nyc"
+      "href": "https://cst.wtf"
     },
     {
       "rel": "http://webfinger.net/rel/avatar",
@@ -14,7 +14,7 @@
     },
     {
       "rel": "https://openid.net/specs/connect/1.0/issuer",
-      "href": "https://id.cst.nyc/"
+      "href": "https://id.cst.wtf/"
     }
   ]
 }

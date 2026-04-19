@@ -4,14 +4,7 @@
     "http://schema.org/name": "Charles Stephen Thompson"
   },
   "links": [
-    {
-      "rel": "http://webfinger.net/rel/profile-page",
-      "href": "https://cst.nyc"
-    },
-    {
-      "rel": "http://webfinger.net/rel/avatar",
-      "href": "https://cst.nyc/assets/avatar.png"
-    },
+
     {
       "rel": "https://openid.net/specs/connect/1.0/issuer",
       "href": "https://id.cst.nyc/"

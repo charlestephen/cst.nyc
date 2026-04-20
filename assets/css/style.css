@@ -674,6 +674,48 @@ ul, ol { list-style: none; }
   line-height: 1.5;
 }
 
+/* ---- Skill tags (resume section + resume submodule) ---- */
+.resume-skills {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.skill-group__label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-muted);
+  margin-bottom: var(--sp-2);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: var(--r-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid;
+  line-height: 1.6;
+}
+.tag--high {
+  background: var(--clr-accent-bg);
+  color: var(--clr-accent);
+  border-color: var(--clr-accent-bd);
+}
+.tag--mid {
+  background: var(--clr-surface-2);
+  color: var(--clr-muted);
+  border-color: var(--clr-border);
+}
+
 /* =============================================
    Contact
    ============================================= */

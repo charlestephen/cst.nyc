@@ -361,21 +361,10 @@ ul, ol { list-style: none; }
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(ellipse 60% 50% at 30% 40%, rgba(88,166,255,.07) 0%, transparent 100%),
-    radial-gradient(ellipse 50% 60% at 75% 60%, rgba(88,166,255,.04) 0%, transparent 100%),
-    var(--clr-bg);
+    linear-gradient(to bottom, rgba(13,17,23,.55) 0%, rgba(13,17,23,.72) 100%),
+    url('../img/hero-bg.jpg') center center / cover no-repeat;
 }
 
-/* Subtle dot-grid pattern */
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(rgba(88,166,255,.1) 1px, transparent 1px);
-  background-size: 28px 28px;
-  opacity: 0.45;
-  pointer-events: none;
-}
 
 .hero__content {
   position: relative;

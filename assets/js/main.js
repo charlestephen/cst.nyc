@@ -10,6 +10,9 @@
   const phrases = [
     'a DevOps Software Engineer',
     'an IT/Infrastructure Engineer',
+    'an AI Automation Engineer',
+    'an MCP & n8n Tinkerer',
+    'a Homelab Sorcerer',
     'a Plant Papa',
     'a Dog Dad',
     'a Lifelong Learner',

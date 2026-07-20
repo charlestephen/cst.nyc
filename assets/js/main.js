@@ -8,7 +8,6 @@
   if (!el) return;
 
   const phrases = [
-    'a DevOps Software Engineer',
     'an IT/Infrastructure Engineer',
     'an AI Automation Engineer',
     'an MCP & n8n Tinkerer',

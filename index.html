@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Charles Stephen Thompson — DevOps &amp; Automation Engineer based in Brooklyn, NY. Specializing in IAM/SSO, AI workflow automation (n8n, MCP servers), Terraform, and cloud infrastructure.">
+  <meta name="description" content="Charles Stephen Thompson — AI Automation &amp; Integration Engineer based in Brooklyn, NY. Specializing in MCP servers, n8n agent workflows, IAM/SSO, and platform infrastructure.">
   <meta name="author" content="Charles Stephen Thompson">
   <meta property="og:title" content="Charles Stephen Thompson">
-  <meta property="og:description" content="DevOps &amp; Automation Engineer — IAM/SSO, AI workflow &amp; MCP integration — Brooklyn, NY">
+  <meta property="og:description" content="AI Automation &amp; Integration Engineer — MCP servers, agent workflows, IAM/SSO — Brooklyn, NY">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cst.nyc">
   <meta property="og:image" content="https://cst.nyc/assets/img/profile-img.png">
@@ -157,7 +157,7 @@
                 </div>
               </dl>
             </div>
-            <p class="about__bio">Innovative and deadline-driven technologist with over a decade of experience in IT and DevOps Engineering, designing and implementing user-centered solutions for complex problems at small, medium, and large startups alike. Passionate about automation, identity &amp; access management, and making infrastructure that actually works. Lately I've been putting AI to work in the real world — building MCP servers, orchestrating n8n workflows around LLM agents, and automating everything from CI/CD and DNS to smart-home lighting and scenes.</p>
+            <p class="about__bio">I'm an automation and integration engineer with 14+ years connecting systems that were never designed to talk to each other — identity, CI/CD, monitoring, and now LLM agents. These days most of my work is building the interfaces and guardrails that let automation act on production safely: custom MCP servers that expose git/CI, metrics, DNS, and SIEM to AI agents under least-privilege scopes, and n8n workflows that actually triage and remediate instead of just paging someone. Underneath it is a decade of enterprise IAM/SSO and platform engineering, plus a 40+ service private cloud I run where the automation has real consequences when it gets things wrong.</p>
           </div>
         </div>
       </div>
@@ -468,14 +468,28 @@
               <div class="resume-card__meta">
                 <span class="resume-card__date">Jan 2018 – Present</span>
               </div>
-              <h4 class="resume-card__title">Founder, CEO &amp; Principal Consultant</h4>
+              <h4 class="resume-card__title">Principal Automation &amp; Platform Engineer</h4>
+              <p class="resume-card__org">Independent Practice, Brooklyn, NY</p>
+              <ul class="resume-card__list">
+                <li>Architected an AI automation platform where n8n workflows orchestrate LLM agents (Claude) to triage alerts, reconcile DNS, and drive CI/CD across a 40+ service private cloud — closing the loop from detection to remediation</li>
+                <li>Designed and shipped custom MCP (Model Context Protocol) servers exposing Forgejo git/CI, Grafana metrics, Technitium DNS, and a Wazuh SIEM to AI agents under per-scope least-privilege authorization</li>
+                <li>Built and deployed a Go/Vue log-analytics service end to end — TimescaleDB schema, syslog ingestion, and OIDC/PKCE authentication — replacing a Python predecessor under production load</li>
+                <li>Engineered a rootless Podman container platform (systemd quadlets) with multi-architecture (arm64/amd64) CI and automated dependency management</li>
+                <li>Architected DNSSEC-signed, split-horizon DNS with catalog-based zone replication, and high-availability PostgreSQL (Patroni) with automated failover</li>
+                <li>Instrumented full-stack observability (Grafana, Prometheus, VictoriaLogs) and a Wazuh SIEM; root-caused live outages spanning DNS blackholes, container-runtime deadlocks, and memory-pressure cascades</li>
+              </ul>
+            </div>
+
+            <div class="resume-card">
+              <div class="resume-card__meta">
+                <span class="resume-card__date">Jan 2018 – Present</span>
+              </div>
+              <h4 class="resume-card__title">Founder &amp; Principal Consultant</h4>
               <p class="resume-card__org">Brooklyn Helpdesk, Inc., Brooklyn, NY</p>
               <ul class="resume-card__list">
-                <li>Architected a self-hosted AI automation platform: n8n workflows orchestrate LLM agents (Claude) to triage alerts, manage DNS, and drive CI/CD across a 40+ service private cloud</li>
-                <li>Designed and deployed custom MCP (Model Context Protocol) servers exposing Forgejo git/CI, Grafana metrics, and a Wazuh SIEM so AI agents act on infrastructure under least-privilege scopes</li>
-                <li>Built home &amp; office automation with Home Assistant and Homebridge/HomeKit — presence-aware lighting, climate, window coverings, and A/V scenes over Zigbee, Z-Wave, and Matter</li>
-                <li>Modernized IAM with self-hosted OIDC SSO (Pocket ID, PKCE); run a rootless Podman platform with multi-arch CI via Forgejo Actions</li>
-                <li>Consumer and SMB IT/DevOps across ~500 client devices (~$7,500/month): IAM/SSO integration, CI/CD automation, and LAN/WiFi</li>
+                <li>Deliver IT and DevOps engineering across ~500 managed client endpoints: IAM/SSO integration, CI/CD automation, and LAN/WiFi design and maintenance</li>
+                <li>Standardized client identity on single sign-on (Okta, GSuite, Active Directory) with automated device lifecycle management via MDM</li>
+                <li>Deliver home and office automation with Home Assistant and Homebridge/HomeKit — presence-aware lighting, climate, window coverings, and A/V scenes over Zigbee, Z-Wave, and Matter</li>
               </ul>
             </div>
 

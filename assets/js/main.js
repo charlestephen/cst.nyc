@@ -8,9 +8,10 @@
   if (!el) return;
 
   const phrases = [
-    'an IT/Infrastructure Engineer',
     'an AI Automation Engineer',
+    'an Integration Engineer',
     'an MCP & n8n Tinkerer',
+    'an IT/Infrastructure Engineer',
     'a Homelab Sorcerer',
     'a Plant Papa',
     'a Dog Dad',

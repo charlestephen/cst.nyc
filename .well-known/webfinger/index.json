@@ -1,0 +1,13 @@
+{
+  "subject": "acct:c@cst.nycf",
+  "properties": {
+    "http://schema.org/name": "Charles Stephen Thompson"
+  },
+  "links": [
+
+    {
+      "rel": "https://openid.net/specs/connect/1.0/issuer",
+      "href": "https://id.cst.nyc/"
+    }
+  ]
+}

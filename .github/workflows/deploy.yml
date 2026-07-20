@@ -29,6 +29,9 @@ jobs:
           # Use a PAT if the resume submodule is private:
           # token: ${{ secrets.PAT }}
 
+      - name: Regenerate resume PDF
+        run: ./bin/build-resume.sh
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 

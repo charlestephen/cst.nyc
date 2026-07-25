@@ -386,3 +386,21 @@ a.contact-chip:hover {
     size: letter portrait;
   }
 }
+
+/* =============================================
+   ATS variant (rendered via ?ats=1) — single column,
+   plain text, so keyword parsers read in linear order.
+   ============================================= */
+.ats .two-col { grid-template-columns: 1fr !important; gap: 0 !important; }
+.ats .skills-grid { display: block !important; }
+.ats .print-actions { display: none !important; }
+.ats .tag {
+  background: none !important;
+  border: none !important;
+  color: var(--clr-text) !important;
+  padding: 0 !important;
+  margin: 0 0.5rem 0.1rem 0 !important;
+  display: inline !important;
+}
+.ats .tag::after { content: " \00B7"; }
+.ats .skill-group .tag:last-child::after { content: ""; }

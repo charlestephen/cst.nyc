@@ -17,7 +17,7 @@
     <div class="header-inner">
       <div class="header-identity">
         <h1 class="header-name">Charles Stephen Thompson</h1>
-        <p class="header-title">AI Automation &amp; Integration Engineer &middot; Platform / Infrastructure &middot; IAM &amp; SSO</p>
+        <p class="header-title">Infrastructure Engineer &middot; Automation &amp; Platform &middot; IAM &amp; SSO</p>
       </div>
       <div class="header-contact">
         <a href="mailto:hello@cst.nyc" class="contact-chip">
@@ -35,6 +35,10 @@
         <a href="https://linkedin.com/in/mrcharlestephen" class="contact-chip" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           mrcharlestephen
+        </a>
+        <a href="https://github.com/charlestephen" class="contact-chip" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          github.com/charlestephen
         </a>
         <a href="https://cst.nyc" class="contact-chip" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
@@ -54,7 +58,7 @@
 
     <!-- Summary -->
     <section class="resume-section" aria-label="Professional summary">
-      <p class="summary-text">Automation and integration engineer with 14+ years connecting systems that were never designed to talk to each other &mdash; identity, CI/CD, monitoring, and now LLM agents. I design the interfaces and guardrails that let automation act on production safely: custom MCP (Model Context Protocol) servers exposing git/CI, metrics, DNS, and SIEM to AI agents under least-privilege scopes; n8n workflows that triage and remediate rather than just notify. Backed by a decade of enterprise IAM/SSO, platform engineering, and running a 40+ service private cloud where the automation has real consequences.</p>
+      <p class="summary-text">Infrastructure engineer with 14+ years designing, automating, and operating production platforms &mdash; identity, CI/CD, DNS, high-availability databases, monitoring, and incident response &mdash; now with LLM agents in the loop. I build the interfaces and guardrails that let automation act on production safely: high-availability PostgreSQL (Patroni) with automated failover, DNSSEC-signed split-horizon DNS, rootless container platforms, and custom MCP (Model Context Protocol) servers exposing git/CI, metrics, DNS, and SIEM to AI agents under least-privilege scopes. Backed by a decade of enterprise IAM/SSO and platform engineering, and a 40+ service private cloud serving dozens of client environments where the automation has real consequences.</p>
     </section>
 
     <div class="two-col">
@@ -128,26 +132,33 @@
               </div>
             </div>
             <div class="skill-group">
+              <h4 class="skill-group__label">Databases &amp; High Availability</h4>
+              <div class="skill-tags">
+                <span class="tag tag--high">PostgreSQL</span>
+                <span class="tag tag--high">PostgreSQL HA (Patroni)</span>
+                <span class="tag tag--high">Replication &amp; Failover</span>
+                <span class="tag tag--high">TimescaleDB</span>
+                <span class="tag tag--mid">InfluxDB</span>
+                <span class="tag tag--mid">HAProxy</span>
+                <span class="tag tag--mid">keepalived (VRRP)</span>
+                <span class="tag tag--mid">Backup &amp; Recovery</span>
+                <span class="tag tag--mid">SQL</span>
+              </div>
+            </div>
+            <div class="skill-group">
               <h4 class="skill-group__label">Languages &amp; Scripting</h4>
               <div class="skill-tags">
                 <span class="tag tag--high">Bash</span>
-                <span class="tag tag--mid">CoffeeScript</span>
-                <span class="tag tag--mid">Go</span>
-                <span class="tag tag--mid">Groovy</span>
-                <span class="tag tag--mid">HTML</span>
-                <span class="tag tag--mid">JavaScript</span>
-                <span class="tag tag--mid">jQuery</span>
-                <span class="tag tag--mid">Node.js</span>
-                <span class="tag tag--mid">PHP</span>
                 <span class="tag tag--high">Python</span>
-                <span class="tag tag--mid">Ruby</span>
                 <span class="tag tag--high">Shell Scripting</span>
-                <span class="tag tag--mid">SQL</span>
-                <span class="tag tag--mid">Swift</span>
-                <span class="tag tag--mid">TeX</span>
+                <span class="tag tag--mid">Go</span>
+                <span class="tag tag--mid">JavaScript</span>
                 <span class="tag tag--mid">TypeScript</span>
-                <span class="tag tag--mid">TOML / XML / YAML</span>
+                <span class="tag tag--mid">Node.js</span>
                 <span class="tag tag--mid">Vue</span>
+                <span class="tag tag--mid">SQL</span>
+                <span class="tag tag--mid">HTML</span>
+                <span class="tag tag--mid">TOML / XML / YAML</span>
               </div>
             </div>
             <div class="skill-group">
@@ -176,6 +187,7 @@
                 <span class="tag tag--mid">Zabbix</span>
                 <span class="tag tag--high">Podman</span>
                 <span class="tag tag--high">Technitium DNS / DNSSEC</span>
+                <span class="tag tag--high">Traefik</span>
                 <span class="tag tag--mid">Pocket ID</span>
                 <span class="tag tag--mid">VictoriaLogs</span>
                 <span class="tag tag--mid">Wazuh (SIEM)</span>
@@ -191,10 +203,26 @@
                 <span class="tag tag--high">Directory Services</span>
                 <span class="tag tag--mid">Distributed Computing</span>
                 <span class="tag tag--high">DNS</span>
+                <span class="tag tag--high">DNSSEC</span>
+                <span class="tag tag--high">Split-Horizon DNS</span>
+                <span class="tag tag--high">High Availability</span>
+                <span class="tag tag--mid">Reverse Proxy</span>
                 <span class="tag tag--high">IAM</span>
                 <span class="tag tag--mid">LAMP Stack</span>
                 <span class="tag tag--mid">Microservices</span>
                 <span class="tag tag--high">Monitoring</span>
+                <span class="tag tag--high">Incident Response</span>
+                <span class="tag tag--high">Linux Administration</span>
+                <span class="tag tag--mid">MTTR</span>
+                <span class="tag tag--mid">On-Call</span>
+                <span class="tag tag--mid">Disaster Recovery (DR)</span>
+                <span class="tag tag--mid">Backup &amp; Restore</span>
+                <span class="tag tag--mid">Capacity Planning</span>
+                <span class="tag tag--mid">Change Management</span>
+                <span class="tag tag--mid">Zero-Trust</span>
+                <span class="tag tag--mid">Site-to-Site VPN</span>
+                <span class="tag tag--mid">Cost Optimization</span>
+                <span class="tag tag--mid">Vendor Management</span>
                 <span class="tag tag--mid">Remote Config &amp; Management</span>
                 <span class="tag tag--mid">SaaS</span>
                 <span class="tag tag--high">SAML / OIDC</span>
@@ -216,15 +244,15 @@
             <div class="entry__header">
               <div>
                 <h3 class="entry__title">Principal Automation &amp; Platform Engineer</h3>
-                <p class="entry__org">BKHD Engineering — Brooklyn, NY</p>
+                <p class="entry__org">BKHD Engineering (platform engineering arm of Brooklyn Helpdesk) — Brooklyn, NY</p>
               </div>
               <span class="entry__date">Jan 2022 – Present</span>
             </div>
             <ul class="entry__bullets">
-              <li>Architected an AI automation platform where n8n workflows orchestrate LLM agents (Claude) to triage monitoring alerts, reconcile DNS, and drive CI/CD across a 40+ service private cloud — closing the loop from detection to remediation rather than stopping at notification</li>
-              <li>Designed and shipped custom MCP (Model Context Protocol) servers exposing Forgejo git/CI, Grafana metrics, Technitium DNS, and a Wazuh SIEM to AI agents under per-scope least-privilege authorization, addressing the unsolved problem of letting agents act on production safely</li>
-              <li>Built and deployed a Go/Vue log-analytics service end to end — TimescaleDB schema, syslog ingestion, and OIDC/PKCE authentication — replacing a Python predecessor under sustained production load</li>
-              <li>Engineered a rootless Podman container platform (systemd quadlets) with multi-architecture (arm64/amd64) CI via Forgejo Actions and automated dependency management</li>
+              <li>Architected an AI automation platform where n8n workflows orchestrate LLM agents (Claude) to triage monitoring alerts, reconcile DNS, and drive CI/CD across dozens of client environments — auto-remediating ~70% of alerts without human intervention and cutting mean time-to-detect by an average of 14 minutes</li>
+              <li>Designed, built, and deployed 150+ custom MCP (Model Context Protocol) server integrations exposing Forgejo git/CI, Grafana metrics, Technitium DNS, and a Wazuh SIEM to AI agents under per-scope least-privilege authorization — solving the largely unsolved problem of letting agents act on production safely</li>
+              <li>Built and deployed a Go/Vue log-analytics service end to end — TimescaleDB schema, syslog ingestion at ~100 GB/day, and OIDC/PKCE authentication — replacing a Python predecessor under sustained production load</li>
+              <li>Engineered a high-availability Kubernetes/Podman container platform (systemd quadlets) spanning 6 self-hosted and 10 cloud nodes and hosting 40+ client-facing services at a 99.99% availability SLA, with multi-architecture (arm64/amd64) CI via Forgejo Actions</li>
               <li>Architected DNSSEC-signed, split-horizon DNS with catalog-based zone replication, and high-availability PostgreSQL (Patroni/TimescaleDB) with automated failover</li>
               <li>Instrumented full-stack observability (Grafana, Prometheus, VictoriaLogs, InfluxDB) and a Wazuh SIEM; root-caused and remediated live outages spanning DNS blackholes, container-runtime deadlocks, and memory-pressure cascades</li>
               <li>Contribute upstream to open-source infrastructure projects and publish GPG-signed Debian packages and npm modules through a self-hosted registry with multi-arch build pipelines</li>
@@ -241,7 +269,7 @@
             </div>
             <ul class="entry__bullets">
               <li>Deliver IT and DevOps engineering across ~500 managed client endpoints: IAM/SSO integration, CI/CD automation, and LAN/WiFi design, installation, and maintenance</li>
-              <li>Standardized client identity on single sign-on (Okta, GSuite, Active Directory) with automated device lifecycle management via MDM</li>
+              <li>Standardized client identity on single sign-on (Okta, GSuite, Active Directory) with automated device lifecycle management via MDM, cutting onboarding and provisioning time ~30% on average across clients</li>
               <li>Deliver home and office automation with Home Assistant and Homebridge/HomeKit — presence-aware lighting, climate, window coverings, and A/V scene control over Zigbee, Z-Wave, and Matter</li>
             </ul>
           </div>
@@ -328,6 +356,8 @@
     </div>
 
   </main>
+
+  <script>if(location.search.indexOf('ats')>-1)document.documentElement.classList.add('ats');</script>
 
   <footer class="resume-footer">
     <p>

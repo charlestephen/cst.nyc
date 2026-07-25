@@ -381,6 +381,22 @@ a.contact-chip:hover {
   a { color: #0969da; text-decoration: none; }
   a::after { content: none; }
 
+  /* PRINT-DENSITY: tighten to two pages (tune here) */
+  body, html          { font-size: 10pt; }
+  .resume-section     { margin-bottom: 0.7rem; }
+  .section-heading    { margin-bottom: 0.4rem; padding-bottom: 0.28rem; }
+  .summary-text       { padding: 0.55rem 0.8rem; line-height: 1.45; }
+  .entry              { padding: 0.5rem 0.75rem; margin-bottom: 0.4rem; }
+  .entry__header      { margin-bottom: 0.28rem; }
+  .entry__bullets     { gap: 0.12rem; }
+  .entry__bullets li  { line-height: 1.4; }
+  .skills-grid        { gap: 0.45rem; }
+  .skill-group__label { margin-bottom: 0.22rem; }
+  .skill-tags         { gap: 0.25rem; }
+  .tag                { padding: 1px 7px; }
+  .resume-footer      { padding: 0.4rem 0 0.5rem; }
+  /* END PRINT-DENSITY */
+
   @page {
     margin: 0.6in 0.5in;
     size: letter portrait;

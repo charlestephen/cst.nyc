@@ -32,16 +32,23 @@ until curl -sfo /dev/null "http://127.0.0.1:$PORT/resume/index.html"; do
   sleep 0.1
 done
 
-"$CHROME" --headless --disable-gpu --no-sandbox --no-pdf-header-footer \
-  --print-to-pdf="assets/resume.pdf" \
-  "http://127.0.0.1:$PORT/resume/index.html" >/dev/null 2>&1
-
-# A blank or truncated render still exits 0, so check the artifact itself.
-python3 - <<'EOF'
+# Render the styled two-column PDF and a single-column ATS-friendly variant.
+render() {
+  url="$1"; out="$2"
+  "$CHROME" --headless --disable-gpu --no-sandbox --no-pdf-header-footer \
+    --print-to-pdf="$out" \
+    "http://127.0.0.1:$PORT/$url" >/dev/null 2>&1
+  # A blank or truncated render still exits 0, so check the artifact itself.
+  python3 - "$out" <<'EOF'
 import re, sys
-d = open("assets/resume.pdf", "rb").read()
+out = sys.argv[1]
+d = open(out, "rb").read()
 pages = len(re.findall(rb"/Type\s*/Page[^s]", d))
 if pages < 1 or len(d) < 50_000:
-    sys.exit(f"build-resume: bad render ({pages} pages, {len(d)} bytes)")
-print(f"wrote assets/resume.pdf ({pages} pages, {len(d)//1024}KB)")
+    sys.exit(f"build-resume: bad render {out} ({pages} pages, {len(d)} bytes)")
+print(f"wrote {out} ({pages} pages, {len(d)//1024}KB)")
 EOF
+}
+
+render "resume/index.html"       "assets/resume.pdf"
+render "resume/index.html?ats=1" "assets/resume-ats.pdf"

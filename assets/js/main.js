@@ -8,10 +8,10 @@
   if (!el) return;
 
   const phrases = [
-    'an AI Automation Engineer',
+    'an Infrastructure Engineer',
+    'an Automation & Platform Engineer',
     'an Integration Engineer',
     'an MCP & n8n Tinkerer',
-    'an IT/Infrastructure Engineer',
     'a Homelab Sorcerer',
     'a Plant Papa',
     'a Dog Dad',
@@ -51,23 +51,18 @@ const yearEl = document.getElementById('copyrightYear');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* =============================================
-   Skill bar animations (Intersection Observer)
+   Skill dots — pop in when scrolled into view
    ============================================= */
-(function initSkillBars() {
+(function initSkillDots() {
   const grid = document.getElementById('skillsGrid');
   if (!grid) return;
+  grid.classList.add('js-anim');
 
   const observer = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        entry.target.querySelectorAll('.skill-item').forEach((item, i) => {
-          const fill  = item.querySelector('.skill-item__fill');
-          const value = item.dataset.value;
-          if (fill && value) {
-            setTimeout(() => { fill.style.width = value + '%'; }, i * 70);
-          }
-        });
+        grid.classList.add('is-visible');
         obs.unobserve(entry.target);
       });
     },

@@ -1,0 +1,12 @@
+# Security contact information for cst.nyc
+# HandyHomo, LLC
+# Disclosure policy: https://cst.nyc/security/policy.html
+
+Contact: mailto:security@handyhomo.com
+# Phone: +1.929.450.2543 — select option 7 (security)
+Contact: tel:+1-929-450-2543
+Encryption: https://cst.nyc/security/public.asc
+Policy: https://cst.nyc/security/policy.html
+Preferred-Languages: en
+Canonical: https://cst.nyc/.well-known/security.txt
+Expires: 2027-07-26T00:00:00.000Z

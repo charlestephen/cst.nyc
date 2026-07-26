@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d1117">
+
+  <title>Security Policy &amp; Vulnerability Disclosure — cst.nyc</title>
+  <meta name="description" content="Vulnerability disclosure policy for cst.nyc, operated by HandyHomo, LLC: how to report a security issue, scope, safe harbor, and our commitments to good-faith researchers.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --clr-bg: #0d1117; --clr-surface: #161b22; --clr-surface-2: #21262d;
+      --clr-border: #30363d; --clr-text: #e6edf3; --clr-muted: #8b949e;
+      --clr-accent: #58a6ff; --clr-accent-h: #79b8ff;
+      --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--clr-bg); color: var(--clr-text);
+      font-family: var(--font-sans); line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--clr-accent); text-decoration: none; }
+    a:hover { color: var(--clr-accent-h); text-decoration: underline; }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+    header.top {
+      border-bottom: 1px solid var(--clr-border); background: rgba(13,17,23,.8);
+      backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 10;
+    }
+    header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .brand { font-weight: 700; color: var(--clr-text); font-size: 1.05rem; letter-spacing: -.02em; }
+    .brand span { color: var(--clr-accent); }
+    .backlink {
+      font-size: .9rem; padding: 6px 12px; border: 1px solid var(--clr-border);
+      border-radius: 8px; color: var(--clr-text);
+    }
+    .backlink:hover { border-color: var(--clr-accent); text-decoration: none; }
+    main { padding: 48px 0 72px; }
+    .eyebrow { color: var(--clr-accent); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .78rem; margin: 0 0 10px; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.3rem); margin: 0 0 8px; letter-spacing: -.02em; }
+    .updated { color: var(--clr-muted); font-size: .85rem; margin: 0 0 8px; }
+    h2 { font-size: 1.3rem; margin: 38px 0 12px; letter-spacing: -.01em; }
+    p, li { color: #c9d1d9; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 18px; padding-left: 20px; }
+    li { margin: 6px 0; }
+    strong { color: var(--clr-text); }
+    code {
+      font-family: var(--font-mono); font-size: .88em; background: var(--clr-surface-2);
+      border: 1px solid var(--clr-border); border-radius: 6px; padding: 1px 6px; color: var(--clr-text);
+    }
+    footer.bot { border-top: 1px solid var(--clr-border); color: var(--clr-muted); font-size: .85rem; }
+    footer.bot .wrap { padding-top: 28px; padding-bottom: 28px; }
+  </style>
+</head>
+
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="../index.html">cst<span>.nyc</span></a>
+      <a class="backlink" href="../index.html">&larr; Back to site</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <p class="eyebrow">Security</p>
+      <h1>Vulnerability Disclosure Policy</h1>
+      <p class="updated">Last updated: 26 July 2026 &middot; Operated by HandyHomo, LLC</p>
+
+      <h2>Our commitment</h2>
+      <p>
+        We value the work of security researchers and the broader community in keeping our
+        systems safe. If you believe you have found a security vulnerability in one of our web
+        properties, we want to hear from you and will work with you to understand and resolve it
+        quickly.
+      </p>
+
+      <h2>How to report</h2>
+      <p>
+        Email <a href="mailto:security@handyhomo.com">security@handyhomo.com</a>. Our
+        machine-readable contact details are published at
+        <a href="/.well-known/security.txt"><code>/.well-known/security.txt</code></a>
+        in accordance with <a href="https://www.rfc-editor.org/rfc/rfc9116" rel="noopener noreferrer">RFC&nbsp;9116</a>.
+      </p>
+      <p>Please include, where possible:</p>
+      <ul>
+        <li>A clear description of the issue and its potential impact.</li>
+        <li>The affected URL, endpoint, or component.</li>
+        <li>Steps to reproduce, proof-of-concept, or relevant request/response details.</li>
+        <li>Any suggested remediation, if you have one.</li>
+      </ul>
+
+      <h2>Scope</h2>
+      <p>This policy covers the public web properties we operate, including:</p>
+      <ul>
+        <li><code>cst.nyc</code> and its subdomains.</li>
+      </ul>
+      <p>The following are <strong>out of scope</strong>, and testing against them is not authorized:</p>
+      <ul>
+        <li>Systems, networks, devices, or data belonging to our clients or third parties.</li>
+        <li>Third-party services we use but do not operate (report those to the relevant vendor).</li>
+        <li>Physical security testing, and testing of any premises or on-site equipment.</li>
+      </ul>
+
+      <h2>Testing guidelines</h2>
+      <p>To keep testing safe and lawful, we ask that you:</p>
+      <ul>
+        <li>Act in good faith, avoid privacy violations, and only interact with accounts you own or have explicit permission to use.</li>
+        <li>Do not access, modify, or destroy data that is not yours, and stop at the point where you can demonstrate a vulnerability.</li>
+        <li>Do not run denial-of-service, high-volume automated, brute-force, spam, or social-engineering attacks.</li>
+        <li>Do not publicly disclose the issue until we have had a reasonable opportunity to remediate it.</li>
+        <li>Give us reasonable time to respond and fix the issue before any disclosure.</li>
+      </ul>
+
+      <h2>Safe harbor</h2>
+      <p>
+        We will not pursue or support legal action against researchers who discover and report
+        security vulnerabilities in good faith and in accordance with this policy. We consider
+        activity conducted consistently with this policy to be authorized, and we will work with
+        you to understand and resolve the issue promptly. If legal action is initiated by a third
+        party against you for activity that complied with this policy, we will make it known that
+        your actions were authorized.
+      </p>
+
+      <h2>Our response</h2>
+      <ul>
+        <li>We aim to acknowledge your report within <strong>3 business days</strong>.</li>
+        <li>We will provide an assessment and expected timeline where practical, and keep you informed of progress.</li>
+        <li>We are happy to credit researchers who wish to be acknowledged once an issue is resolved.</li>
+      </ul>
+
+      <h2>Out-of-scope findings</h2>
+      <p>Reports limited to the following, without a demonstrated security impact, are generally not accepted:</p>
+      <ul>
+        <li>Missing best-practice HTTP headers or cookie flags with no proven exploit.</li>
+        <li>Rate-limiting or brute-force findings on non-authentication endpoints.</li>
+        <li>Clickjacking on pages with no sensitive state-changing actions.</li>
+        <li>Self-XSS, or issues requiring an already-compromised device or unlikely user interaction.</li>
+        <li>Reports produced solely by automated scanners without validation.</li>
+      </ul>
+
+      <h2>Preferred languages</h2>
+      <p>We prefer reports in English.</p>
+
+      <p style="margin-top:32px"><a class="backlink" href="../index.html">&larr; Back to cst.nyc</a></p>
+    </div>
+  </main>
+
+  <footer class="bot">
+    <div class="wrap">&copy; <span id="y">2026</span> HandyHomo, LLC &middot; Security contact: <a href="mailto:security@handyhomo.com">security@handyhomo.com</a></div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+
+</html>

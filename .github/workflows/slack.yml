@@ -1,0 +1,39 @@
+name: Slack
+
+on:
+  workflow_run:
+    workflows:
+      - "Deploy to GitHub Pages"
+    types:
+      - completed
+
+permissions: {}
+
+jobs:
+  notify:
+    if: github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Post to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          STATUS: ${{ github.event.workflow_run.conclusion }}
+          WORKFLOW: ${{ github.event.workflow_run.name }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.event.workflow_run.head_branch }}
+          URL: ${{ github.event.workflow_run.html_url }}
+        run: |
+          set -euo pipefail
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "Slack webhook is not available for this run"
+            exit 0
+          fi
+          text=$(printf '*%s* `%s` · %s (`%s`)\n%s' "$STATUS" "$REPO" "$WORKFLOW" "$BRANCH" "$URL")
+          payload=$(jq -n --arg text "$text" '{text:$text}')
+          curl --fail --silent --show-error \
+            --proto '=https' --tlsv1.2 \
+            -H 'Content-Type: application/json' \
+            -d "$payload" \
+            "$SLACK_WEBHOOK_URL" \
+            -o /dev/null
